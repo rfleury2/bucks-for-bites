@@ -1,0 +1,20 @@
+<h1>Choose rewards!</h1>
+<br>
+
+<% @merchants.each do |merchant| %>
+  <div class="col-xs-12 col-md-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <%= merchant.name %>
+      </div>
+      <div class="panel-body">
+        <div>
+          <%= image_tag merchant.logo_url, height: 200, width: 200 %> 
+        </div>
+        <div>
+          Get $<%= merchant.cash_prize %> online credit for <%= merchant.meals_required %> meals.
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

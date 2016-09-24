@@ -11,34 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160924173052) do
+ActiveRecord::Schema.define(version: 20160924175659) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "contests", force: :cascade do |t|
-    t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "category"
-  end
-
-  create_table "games", force: :cascade do |t|
-    t.integer  "player_1_id"
-    t.integer  "player_2_id"
-    t.integer  "contest_id"
-    t.string   "winner"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "user_id"
-  end
-
-  create_table "players", force: :cascade do |t|
+  create_table "merchants", force: :cascade do |t|
     t.string   "name"
-    t.integer  "rating",     default: 1000
-    t.integer  "contest_id"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.integer  "meals_required"
+    t.float    "cash_prize"
+    t.string   "logo_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: :cascade do |t|
@@ -54,8 +38,6 @@ ActiveRecord::Schema.define(version: 20160924173052) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.string   "provider"
-    t.string   "uid"
     t.string   "handle"
   end
 
