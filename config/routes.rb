@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
-  resources :merchants, only: [:index]
+  resources :merchants, only: [:index] do
+    resources :rewards, only: [:new, :create]
+  end
 
 
   # Example of regular route:

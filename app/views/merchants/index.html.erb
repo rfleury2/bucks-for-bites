@@ -1,4 +1,4 @@
-<h1>Choose rewards!</h1>
+<h1>Choose store for reward!</h1>
 <br>
 
 <% @merchants.each do |merchant| %>
@@ -14,7 +14,9 @@
         <div>
           Get $<%= merchant.cash_prize %> online credit for <%= merchant.meals_required %> meals.
         </div>
+        <%= link_to "Choose", new_merchant_reward_path(merchant), class: 'btn btn-success btn-block' %>
       </div>
+      
     </div>
   </div>
 <% end %>

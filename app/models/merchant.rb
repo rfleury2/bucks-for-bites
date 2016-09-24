@@ -1,4 +1,6 @@
 class Merchant < ActiveRecord::Base
+  has_many :rewards
+
   validates_presence_of :name
   validates_presence_of :meals_required
   validates_presence_of :cash_prize
