@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :merchants, only: [:index] do
-    resources :rewards, only: [:new, :create]
+    resources :rewards, only: [:new, :create, :show]
   end
 
 

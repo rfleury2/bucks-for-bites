@@ -1,0 +1,9 @@
+<div class='text-center'>
+  <% if signed_in? %>
+    <%= link_to "Claim meal", merchants_path, class: 'btn btn-lg btn-primary btn-block' %>
+    <%= link_to "My rewards - TBI", merchants_path, class: 'btn btn-lg btn-primary btn-block' %>
+  <% else %>
+    <%= link_to "Log in", new_user_session_path, class: 'btn btn-lg btn-primary btn-block' %>
+    <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-lg btn-primary btn-block' %>
+  <% end %>  
+</div>

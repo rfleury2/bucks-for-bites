@@ -3,7 +3,7 @@ class CreateMerchants < ActiveRecord::Migration
     create_table :merchants do |t|
       t.string :name
       t.integer :meals_required
-      t.float :cash_prize
+      t.money :cash_prize_cents
       t.string :logo_url
 
       t.timestamps
