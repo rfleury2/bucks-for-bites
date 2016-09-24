@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     resources :rewards, only: [:new, :create, :show]
   end
 
+  get 'dashboard' => 'home#dashboard'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
