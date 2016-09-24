@@ -7,6 +7,8 @@ class GiftCard < ActiveRecord::Base
   validates_presence_of :merchant
   validates_presence_of :amount_cents
 
+  scope :for_user, -> (user) { where(user: user) }
+
   def reset_rewards
     user.rewards.where(merchant: merchant).last(merchant.meals_required).each do |reward|
       reward.redeemed = true

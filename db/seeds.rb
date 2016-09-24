@@ -9,8 +9,8 @@
 Merchant.find_or_create_by(
   name: "Target",
   logo_url: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Target_logo.svg",
-  meals_required: 10,
-  cash_prize_cents: 1000
+  meals_required: 5,
+  cash_prize_cents: 500
 )
 
 Merchant.find_or_create_by(
