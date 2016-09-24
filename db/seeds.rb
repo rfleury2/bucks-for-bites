@@ -15,7 +15,7 @@ Merchant.find_or_create_by(
 
 Merchant.find_or_create_by(
   name: "GameStop",
-  logo_url: "http://www.gamestop.com/gs/logos/images/preview_gstag_blackred.png",
+  logo_url: "http://vectorlogofree.com/wp-content/uploads/2012/12/gamestop-logo-vector.png",
   meals_required: 20,
   cash_prize_cents: 1000
 )

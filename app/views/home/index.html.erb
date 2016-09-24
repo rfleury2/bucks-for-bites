@@ -6,12 +6,17 @@
     <br>
     <br>
     <%= link_to "Claim Meal", merchants_path, class: 'btn btn-lg btn-primary btn-block' %>
+    <br>
     <%= link_to "My Gift Cards", merchant_gift_cards_path(1), class: 'btn btn-lg btn-primary btn-block' %>
+    <br>
     <%= link_to 'My Information', edit_user_registration_path, class: 'btn btn-lg btn-primary btn-block' %>
+    <br>
   <% else %>
     <%= link_to "Log in", new_user_session_path, class: 'btn btn-lg btn-primary btn-block' %>
     <br>
+    <br>
     <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-lg btn-primary btn-block' %>
+    <br>
     <br>
   <% end %>  
 </div>
