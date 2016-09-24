@@ -1,0 +1,14 @@
+<div class="panel panel-default devise-bs">
+  <div class="panel-heading">
+    <h4>Claim your rewards from <%= @merchant.name %></h4>
+  </div>
+  <div class="panel-body">
+    <%= form_for(:reward, url: merchant_rewards_path(@merchant), html: { role: "form" }) do |f| %>
+      <div class="form-group">
+        <%= f.label :claim_code %>
+        <%= f.text_field :claim_code, autofocus: true, class: "form-control" %>
+      </div>
+      <%= f.submit "Claim my reward points", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

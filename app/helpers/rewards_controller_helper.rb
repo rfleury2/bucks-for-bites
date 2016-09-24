@@ -1,0 +1,2 @@
+module RewardsControllerHelper
+end
