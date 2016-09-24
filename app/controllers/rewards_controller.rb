@@ -7,11 +7,7 @@ class RewardsController < ApplicationController
     new_reward = current_user.rewards.new(merchant: merchant, claim_code: claim_code_param)
     if new_reward.save
       get_counts
-      if @reward_count >= merchant.meals_required
-        redirect_to merchant_reward_path(merchant, new_reward)
-      else
-        redirect_to merchant_reward_path(merchant, new_reward)
-      end
+      redirect_to merchant_reward_path(merchant, new_reward)
     else
       flash[:alert] = new_reward.errors.full_messages.last
       redirect_to new_merchant_reward_path(merchant)

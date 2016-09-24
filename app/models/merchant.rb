@@ -1,5 +1,6 @@
 class Merchant < ActiveRecord::Base
   has_many :rewards
+  has_many :gift_cards
   monetize :cash_prize_cents
 
   validates_presence_of :name

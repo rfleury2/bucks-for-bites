@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
   resources :merchants, only: [:index] do
     resources :rewards, only: [:new, :create, :show]
+    resources :gift_cards, only: [:index, :show, :create]
   end
 
   get 'dashboard' => 'home#dashboard'

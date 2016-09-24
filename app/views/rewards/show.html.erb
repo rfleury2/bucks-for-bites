@@ -10,7 +10,7 @@
   <p>
     <%= link_to "Back to Home", root_path, class: "btn btn-primary btn-lg" %>
     <% if @reward_count >= @merchant.meals_required %>
-      <%= link_to "Claim your gift card!" %>
+      <%= button_to "Claim your gift card!", merchant_gift_cards_path(@merchant), class: "btn btn-success btn-lg"  %>
     <% end %>
   </p>
 </div>
