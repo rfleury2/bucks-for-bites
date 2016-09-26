@@ -2,9 +2,9 @@
   <h1>Congratulations!</h1>
   <p>You just claimed a reward from <%= @merchant.name %>.</p>
 
-  <p>You have claimed <%= @reward_count %> meals of <%= @merchant.meals_required %> and need <%= @merchant.meals_required - @reward_count %> more to claim $<%= @merchant.cash_prize %>!</p>
+  <p>You have claimed <strong><%= @reward_count %></strong> meals of <%= @merchant.meals_required %> and need <%= @merchant.meals_required - @reward_count %> more to claim $<%= @merchant.cash_prize %>!</p>
   <div class="progress">
-    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow=<%= @reward_count %> aria-valuemin="0" aria-valuemax=<%= @merchant.meals_required %> style="width: <%= @reward_percentage_complete %>%">
+    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow=<%= @reward_count %> aria-valuemin="0" aria-valuemax=<%= @merchant.meals_required %> style="width: <%= @reward_percentage_complete %>%">
     </div>
   </div>
   <p>
