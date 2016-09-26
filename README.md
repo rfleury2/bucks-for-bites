@@ -1,25 +1,30 @@
 # Bucks for Bites
 
-This is a web application built during the Greater Chicago Food Depository (ADD LINK) first Hackathon to End Hunger (ADD LINK).  Its principal goal is to promote participation among teenagers and older children in GCFD's programs.
+This is a web application built during the [Greater Chicago Food Depository](http://www.chicagosfoodbank.org/) first [Hackathon to End Hunger](https://www.facebook.com/events/1793335117620404/).  
 
-It is common for older kids to bring their siblings to receive meals and themselves not participate due to the social stigma associated with receiving the help.  Bucks for Bites aims to provide an incentive for older kids to participate by awarding gift cards for sustained participation.
+Bucks for Bites' principal goal is to promote participation among teenagers and older children in GCFD's programs.  It is common for older kids to bring their younger siblings to receive meals and yet not take a meal for themselves.  This is in large part due to the social stigma associated with receiving the help.
 
-#### Links
-
-Greater Chicago Food Depository
-TBD
-https://www.eventbrite.com/e/hackathon-to-end-hunger-tickets-27170822662#
+Bucks for Bites aims to provide an incentive to take part in the Greater Chicago Food Depository's meal programs by rewarding older kids and teenagers with online gift cards for sustained participation.  Inside of each meal package, a small card provides instructions on how to enroll and start collecting points.
 
 ### Run it locally
 
-TBD
+Clone the repo
+```git clone https://github.com/rfleury2/bucks-for-bites.git```
+
+Spin it up!
+```ruby
+rake db:create db:migrate db:seed
+rails s
+```
+
+Note: use ```a1b2c3``` as a code when claiming a meal.
 
 ### Contributors
 
-Ricardo Fleury
+[Ricardo Fleury](http://www.github.com/rfleury2)
 
 ### License
 
-This project is licensed under the MIT License and is provided as is. The spirit of this application was to learn and create an app as part of a hackathon.
+This project is licensed under the MIT License and is provided as is.
 
 Love it for what it does, improve it for what it does not yet do
