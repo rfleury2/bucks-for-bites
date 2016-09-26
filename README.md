@@ -6,10 +6,12 @@ Bucks for Bites' principal goal is to promote participation among teenagers and 
 
 Bucks for Bites aims to provide an incentive to take part in the Greater Chicago Food Depository's meal programs by rewarding older kids and teenagers with online gift cards for sustained participation.  Inside of each meal package, a small card provides instructions on how to enroll and start collecting points.
 
-### Run it locally
+## Run it locally
 
 Clone the repo
-```git clone https://github.com/rfleury2/bucks-for-bites.git```
+```ruby
+git clone https://github.com/rfleury2/bucks-for-bites.git
+```
 
 Spin it up!
 ```ruby
@@ -17,13 +19,13 @@ rake db:create db:migrate db:seed
 rails s
 ```
 
-Note: use ```a1b2c3``` as a code when claiming a meal.
+NOTE: use ```a1b2c3``` as a code when claiming a meal.
 
-### Contributors
+## Contributors
 
 [Ricardo Fleury](http://www.github.com/rfleury2)
 
-### License
+## License
 
 This project is licensed under the MIT License and is provided as is.
 
